@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import utils.AllureSteps;
 
-@Epic("Mobile Android Automation")
+@Epic("Mobile Automation")
 @Feature("Authentication")
 @Owner("Agustina Di Natale")
 @Tag("Login")

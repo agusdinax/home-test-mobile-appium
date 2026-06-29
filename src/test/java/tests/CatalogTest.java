@@ -36,7 +36,5 @@ public class CatalogTest extends BaseTest {
         AllureSteps.run("Scroll to artwork", driver, () -> catalog.scrollToArtwork(artwork));
         AllureSteps.run("Open artwork detail", driver, () -> catalog.openArtwork(artwork));
         AllureSteps.run("Validate artwork detail", driver, () -> catalog.validateArtworkDetail(artwork));
-
     }
-
 }
