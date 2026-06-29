@@ -1,0 +1,32 @@
+{
+  "users": {
+    "validUser": {
+      "email": "johndoe@email.com",
+      "password": "123"
+    },
+    "invalidPassword": {
+      "email": "johndoe@email.com",
+      "password": "nopassssss"
+    },
+    "invalidEmail": {
+      "email": "fakeemail.com",
+      "password": "123"
+    },
+    "invalidCredentials": {
+      "email": "fake@email.com",
+      "password": "wrong"
+    },
+    "emptyUser": {
+      "email": "",
+      "password": ""
+    },
+    "onlyEmail": {
+      "email": "johndoe@email.com",
+      "password": ""
+    },
+    "onlyPassword": {
+      "email": "",
+      "password": "123"
+    }
+  }
+}

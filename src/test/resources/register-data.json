@@ -1,0 +1,15 @@
+{
+  "users": {
+    "newUser": {
+      "email": "automation@test.com",
+      "password": "Password123",
+      "firstName": "Automation",
+      "lastName": "Tester",
+      "address": "123 Main Street",
+      "city": "Buenos Aires",
+      "zip": "7600",
+      "birthDate": "11/10/1992",
+      "acceptTerms": true
+    }
+  }
+}
