@@ -31,12 +31,11 @@ public class CatalogTest extends BaseTest {
         CatalogPage catalog = new CatalogPage();
         User user = LoginDataLoader.getUser("validUser");
         String artwork = "Twilight Glow";
-        AllureSteps.run("Login using valid credentials", driver,
-                () -> login.login(user.getEmail(), user.getPassword()));
-        AllureSteps.run("Step 2 - Validate Inventory screen", driver, login::verifySuccessLogin);
-        AllureSteps.run("Step 3 - Scroll to artwork", driver, () -> catalog.scrollToArtwork(artwork));
-        AllureSteps.run("Step 4 - Open artwork detail", driver, () -> catalog.openArtwork(artwork));
-        AllureSteps.run("Step 5 - Validate artwork detail", driver, () -> catalog.validateArtworkDetail(artwork));
+        AllureSteps.run("Login using valid credentials", driver, () -> login.login(user.getEmail(), user.getPassword()));
+        AllureSteps.run("Validate Inventory screen", driver, login::verifySuccessLogin);
+        AllureSteps.run("Scroll to artwork", driver, () -> catalog.scrollToArtwork(artwork));
+        AllureSteps.run("Open artwork detail", driver, () -> catalog.openArtwork(artwork));
+        AllureSteps.run("Validate artwork detail", driver, () -> catalog.validateArtworkDetail(artwork));
 
     }
 
